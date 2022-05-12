@@ -9,10 +9,13 @@ Default: 400
 Medium: 500
 Semi-bold: 600
 Bold: 700
+
 - Line heights
 Default: 1
 small: 1.05
 medium: 1.2
+Large: 1.8
+
 paragraph default: 1.6
 
 -Letter spacing
@@ -66,6 +69,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +77,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /*
@@ -97,7 +102,7 @@ body {
 
 .container {
   /* 140px */
-  max-width: 1200px;
+  max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -257,6 +262,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
